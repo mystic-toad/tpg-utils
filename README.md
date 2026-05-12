@@ -47,9 +47,9 @@ This is the first command to use. It creates a more readable directory format an
 
 You can stop a folder from being indexed (for example, if you're in anti-vehicle tpg and you have a webcam folder) by putting a file named exactly `.noindex` into it. This folder and any within it will not be searched.
 
-Other settings are available such as `--workers` and `--timeout`. These are both optimal given the current implenentation and would only need to be changed if you have a weird set of photos. Workers defines the amount of CPU processes to use and is automatically calculated depending on the size of your CPU (it cannot exceed 8 by default). Timeout determines the maximum amount of time that can be spent indexing one photo; the only time I've personally hit this was when I tried to index a 29 GB photo.
+Other settings are available such as `--workers` and `--timeout`. These are both optimal given the current implementation and would only need to be changed if you have a weird set of photos. Workers defines the amount of CPU processes to use and is automatically calculated depending on the size of your CPU (it cannot exceed 8 by default). Timeout determines the maximum amount of time that can be spent indexing one photo; the only time I've personally hit this was when I tried to index a 29 GB photo.
 ```powershell
-python3 photofind.py index  <directory> [--out index.pkl] [--workers 8] [--timeout 5]
+python3 photofind.py index <directory> [--out index.pkl] [--workers 8] [--timeout 5]
 ```
 The default output from this file is `index.pkl`, which is also used by default by the other subcommands. Unless you have multiple directories, I'd recommend keeping it as this.
 
