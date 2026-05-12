@@ -71,7 +71,7 @@ python3 photofind.py combine <index1.pkl> <index2.pkl> ... [--out merged.pkl]
 ```
 
 # Disclaimer
-This script indexes files by scanning your filesystem, which means it will touch a potentially large number of files. It is designed to be read-only in its indexing behavior, but depending on your system configuration and permissions, there is a non-zero chance it could interact with files in unintended ways.
+`photofind.py` indexes files by scanning your filesystem, which means it will touch a potentially large number of files. It is designed to be read-only in its indexing behavior, but depending on your system configuration and permissions, there is a non-zero chance it could interact with files in unintended ways.
 
 Before running it, it's a good idea to:
 - Review the source code so you know exactly what it does
